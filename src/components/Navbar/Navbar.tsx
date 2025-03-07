@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import React, { useState } from 'react'
 import ThemeToggler from './ThemeToggler'
+import { Menu } from 'lucide-react'
 
 const navigationRoutes = [
     { link: '/', title: 'home' },
@@ -30,7 +30,7 @@ const Navbar = () => {
                 </div>
 
                 {/* menu items */}
-                <section className='flex items-center justify-center gap-5 flex-1 '>
+                <section className='hidden lg:flex items-center justify-center gap-5 flex-1 '>
                     {navigationRoutes?.map(route =>
                         <Link
                             key={route.link}
@@ -66,6 +66,10 @@ const Navbar = () => {
                     <ThemeToggler />
                 </section>
 
+                {/* mobile navbar ( side menu ) */}
+                <section className='lg:hidden'>
+                    <Menu />
+                </section>
             </section>
         </nav>
     )

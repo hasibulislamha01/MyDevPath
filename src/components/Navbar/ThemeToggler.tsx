@@ -1,7 +1,10 @@
+"use-client"
+
 import { Moon, Sun } from 'lucide-react'
 import React from 'react'
 
 const ThemeToggler = () => {
+
   return (
     <section className='flex items-center'>
         <Sun strokeWidth={1.5} />
