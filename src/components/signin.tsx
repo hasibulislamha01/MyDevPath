@@ -1,5 +1,6 @@
 
 import { signIn, auth } from "../../auth"
+import SignOut from "./Navbar/signOut"
 
 export default async function SignIn() {
   const sesssion = await auth()
@@ -16,7 +17,7 @@ export default async function SignIn() {
     >
       {
         user ?
-          <button>Sign Out</button>
+          <SignOut />
           :
           <button type="submit">Signin with Google</button>
       }

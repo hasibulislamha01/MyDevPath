@@ -4,6 +4,7 @@ import { Menu } from 'lucide-react'
 
 const navigationRoutes = [
     { link: '/', title: 'home' },
+    { link: '/blogs', title: 'blogs' },
     { link: '/contact', title: 'contact' },
     { link: '/about', title: 'about' },
 ]
