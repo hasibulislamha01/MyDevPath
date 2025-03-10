@@ -1,9 +1,11 @@
 import React from 'react'
 
-const BlogDetailsPage = ({ blog }) => {
+const BlogDetailsPage = async ({ params }) => {
+
+    
     return (
         <section>
-            <h1>{blog?.title}</h1>
+            Details of blog {params?.blogId}
         </section>
     )
 }
