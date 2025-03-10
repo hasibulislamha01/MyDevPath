@@ -1,10 +1,12 @@
 import React from 'react'
 
-const BlogDetailsPage = async ({ params }) => {
+const BlogDetailsPage = async ({ params }: {
+    params: { blogId: number }
+}) => {
 
-    
+
     return (
-        <section>
+        <section className='min-h-screen'>
             Details of blog {params?.blogId}
         </section>
     )
